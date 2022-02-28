@@ -1,4 +1,4 @@
-package com.amptester.controller;
+package com.amptester.controller.node.memory;
 
 import com.bean.BigObject;
 import com.bean.CustomCache;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/structures/")
-public class CustomMemoryStructures {
+public class CustomMemoryStructuresController {
     
     static CustomCache  customCache = new CustomCache();
 

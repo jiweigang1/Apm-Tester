@@ -1,4 +1,4 @@
-package com.amptester.controller;
+package com.amptester.controller.node.memory;
 import java.util.ArrayList;
 import java.util.List;
 

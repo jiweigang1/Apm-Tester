@@ -1,4 +1,4 @@
-package com.amptester.controller;
+package com.amptester.controller.node.memory;
 
 import com.bean.SmallObject;
 
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/object/")
-public class ObjectInstanceTracking {
+public class ObjectInstanceTrackingController {
     /**
      * 测试小对象创建,一次请求创建1000个
      * 触发mgc
