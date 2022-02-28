@@ -13,6 +13,7 @@ public class Spider {
         while(true){
             this.memoryLeak();
             this.objectInstanceTracking();
+            this.customMemoryStructures();
             try {
                 Thread.sleep(2000);
             } catch (InterruptedException e) {}
@@ -26,6 +27,10 @@ public class Spider {
 
     public void objectInstanceTracking(){
         String url = Base_Path + "object/objectInstanceTracking";
+        _request(url);
+    }
+    public void customMemoryStructures(){
+        String url = Base_Path + "structures/customMemoryStructures";
         _request(url);
     }
 

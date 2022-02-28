@@ -13,4 +13,8 @@ public class CustomCache {
         datas[index] = object;
         index++;
     }
+
+    public int size(){
+        return this.index;
+    }
 }
