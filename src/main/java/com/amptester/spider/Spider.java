@@ -14,10 +14,8 @@ public class Spider {
             this.memoryLeak();
             this.objectInstanceTracking();
             this.customMemoryStructures();
+            //会有一定时长
             this.threadContention();
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {}
         }
     }
 
