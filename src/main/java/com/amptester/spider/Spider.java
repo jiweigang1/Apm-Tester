@@ -14,6 +14,7 @@ public class Spider {
             this.memoryLeak();
             this.objectInstanceTracking();
             this.customMemoryStructures();
+            this.threadContention();
             try {
                 Thread.sleep(2000);
             } catch (InterruptedException e) {}
@@ -34,6 +35,11 @@ public class Spider {
         _request(url);
     }
 
+    public void threadContention(){
+        String url = Base_Path + "threadContention/sleep";
+        _request(url);
+    }
+
     private void _request(String url){
         
       
@@ -43,7 +49,7 @@ public class Spider {
                 .url(url)
                 .build();
         try {
-        	System.out.println(url + "request");
+        	System.out.println(url + " request ");
         	System.out.println(client.newCall(request).execute().body().string());
         } catch (IOException e) {
             e.printStackTrace();
