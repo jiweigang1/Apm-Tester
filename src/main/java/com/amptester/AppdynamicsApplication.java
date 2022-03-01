@@ -8,7 +8,7 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @SpringBootApplication
 @ServletComponentScan
-public class ApmTesterApplication {
+public class AppdynamicsApplication {
     public static void run(String[] args) {
         SpringApplication application = new SpringApplication(ApmTesterApplication.class);
         application.run(args);
