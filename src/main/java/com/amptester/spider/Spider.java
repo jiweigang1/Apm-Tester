@@ -7,7 +7,8 @@ import okhttp3.Request;
 
 public class Spider {
     private static OkHttpClient client = new OkHttpClient();
-    public static  String Base_Path    = "http://localhost:8082/";
+    public static  String Base_Port    = System.getProperty("server.port") == null? "8082": System.getProperty("server.port");
+    public static  String Base_Path    = "http://localhost:"+ Base_Port +"/";
 
     public void run(){
         while(true){

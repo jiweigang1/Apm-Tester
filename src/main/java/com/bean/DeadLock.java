@@ -58,6 +58,7 @@ public class DeadLock implements Runnable {
         }
     }
     public static void main(String[] args) {
+        System.out.println(System.getProperty("server.port"));
         DeadLock.lock();
     }
 }
